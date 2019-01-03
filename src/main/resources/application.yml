@@ -16,6 +16,8 @@ eureka:
 zuul:
   routes:
     order-service: /apigateway/**
+    product-service: /apigateway/**
+  ignored-patterns: /*-service/**
   #忽略整个服务，不对外提供接口
-  ignored-services: product-service
+  #ignored-services: product-service
 
